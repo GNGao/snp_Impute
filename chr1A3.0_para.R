@@ -1,12 +1,8 @@
-#.libPaths(c("/scratch/user/gaoguannan/Genotypes/XGBoost/Rlib", .libPaths()))
-.libPaths(c("/scratch/user/gaoguannan/Rlib", .libPaths()))
-
 library(vcfR)
 require(xgboost)
 library(dplyr) ## for mutate function
 library(parallel)
 # 
-# install.packages("dplyr", lib = "/scratch/user/gaoguannan/Genotypes/XGBoost/Rlib")
 
 ## Function to compute classification error ########################################
 classification_error <- function(conf_mat) {
